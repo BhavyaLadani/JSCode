@@ -1,0 +1,3 @@
+{"d":{"a":10,"b":20,"c":[30,20]}}Addition : 30 
+ Substraction : 0 
+ Multication : 600

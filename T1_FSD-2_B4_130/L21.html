@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function Show(){
+            var obj={"name":"NAS","Subject":"FSD2","Exam":"2026-04-15"}
+            console.log("name : ",obj.name)
+            console.log("Subject :",obj.Subject)
+            console.log("Exam : ",obj.Exam)
+        }
+        const emp=[{"name":"xyz","age":30},{"name":"pqr","age":50},{"name":"mno","age":45}]
+        const e=emp.sort(
+            (a,b)=>b.age-a.age
+        )
+        for (i of e ){
+            console.log(i.name + " "+i.age)
+        }
+        console.log(
+            Math.max(...emp.map(e=>e.age))
+        )
+        var g=["pqr","jkl","abc","xyz","mno"]
+        var ans={};
+        ans[g[0]]=g[g.length-1]
+        console.log(ans)
+    </script>
+</head>
+<body>
+    <button onclick="Show()">Cick Me</button>
+</body>
+</html>

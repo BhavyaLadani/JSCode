@@ -1,0 +1,13 @@
+var fs=require("fs")
+// const { parse } = require("path")
+var data={d:{a:10,b:20,c:[30,20]}}
+fs.writeFileSync("k.txt",JSON.stringify(data))
+var z=fs.readFileSync("k.txt","utf-8")
+console.log(z)
+var ans1=parseInt(data.d.a)+parseInt(data.d.b)
+var ans2=parseInt(data.d.c[1])-parseInt(data.d.b)
+var ans3=parseInt(data.d.c[0])*parseInt(data.d.c[1])
+console.log(ans1)
+console.log(ans2)
+console.log(ans3)
+fs.appendFileSync("k.txt",`Addition : ${ans1} \n Substraction : ${ans2} \n Multication : ${ans3}`)
